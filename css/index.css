@@ -105,7 +105,7 @@ section {
   display: block;
 }
 body {
-  line-height: 1;
+  line-height: 1.2;
 }
 ol,
 ul {
@@ -135,13 +135,90 @@ body {
   height: 100%;
   margin: 0 10%;
 }
+/*  mix-ins  */
 /*  TOP  */
-/* BANNER */
+/*  navbar */
+header .navigation {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2em;
+  word-spacing: 1em;
+}
+header .navigation a {
+  font-size: 20px;
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+/*  banner  */
+header .introBanner {
+  height: 45%;
+  display: flex;
+  align-items: center;
+  margin: 2em 0;
+  background-color: darkgrey;
+  box-shadow: 2px 4px 8px 0 grey;
+}
+header .introBanner .bannerTitles {
+  margin-left: 5em;
+}
+header .introBanner .bannerTitles h1 {
+  font-size: 2.5rem;
+}
+header .introBanner .bannerTitles h2 {
+  font-size: 2rem;
+}
 header .introBanner img {
   height: 20em;
   width: auto;
+  padding: 1em;
 }
-/* TABLE */
+/*  overview under the banner  */
+.overview {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.overview div.me {
+  width: 50%;
+}
+.overview div.me h2 {
+  font-size: 25px;
+  padding: 5px;
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+}
+.overview div.me p {
+  font-size: 20px;
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+/*  body content info boxes  */
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.stats div {
+  width: 40%;
+  margin: 4% 0;
+}
+.stats div h2 {
+  border-bottom: 1px solid black;
+  font-size: 25px;
+  padding: 5px;
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+}
+.stats div ul {
+  display: flex;
+  flex-flow: column;
+  align-content: stretch;
+  font-size: 20px;
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+/* contact and table */
 .contact {
   display: flex;
   justify-content: flex-end;
@@ -153,9 +230,24 @@ header .introBanner img {
   border-collapse: collapse;
 }
 .contact table tr {
+  font-size: 20px;
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif;
   height: 2em;
 }
 .contact table tr th,
 .contact table tr td {
   padding: 1em;
+}
+/*  footer  */
+footer {
+  height: 15%;
+  background-color: darkgrey;
+}
+footer h4 {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-content: flex-end;
+  font-size: 20px;
 }

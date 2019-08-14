@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.2;
 }
 ol, ul {
 	list-style: none;
@@ -65,15 +65,93 @@ html, body {
 	border-collapse: collapse;
 };
 
+/*  mix-ins  */
+.h2Style(){
+	font-size: 25px;
+	padding: 5px;
+	font-weight: bold;
+	font-family: 'Roboto Slab', serif;
+}
+
+.fontStyle(){
+	font-size: 20px;
+	padding: 5px;
+	font-family: 'Montserrat', sans-serif;
+}
+
 /*  TOP  */
- /* BANNER */
+
+/*  navbar */
+
+header .navigation{
+	display: flex;
+	justify-content: flex-end;
+	margin: 2em;
+	word-spacing: 1em;
+	a{
+		.fontStyle();
+	}
+}
+
+/*  banner  */
+
+header .introBanner{
+	height: 45%;
+	display: flex;
+	align-items: center;
+	margin: 2em 0;
+	background-color: darkgrey;
+	box-shadow: 2px 4px 8px 0 grey; 
+	.bannerTitles{
+		margin-left: 5em;
+		h1{font-size: 2.5rem;}
+		h2{font-size: 2rem;}
+	}
+}
+
  header .introBanner img{
 	 height: 20em;
 	 width: auto;
+	 padding: 1em;
  }
+ 
+
+/*  overview under the banner  */
+.overview{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.overview div.me{
+	width: 50%;
+	h2{.h2Style();}
+	p{.fontStyle();}
+}
 
 
- /* TABLE */
+/*  body content info boxes  */
+.stats{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+	div{
+		width: 40%;
+		margin: 4% 0;
+		h2{
+			border-bottom: 1px solid black;
+			.h2Style();}
+		ul{
+			display: flex;
+			flex-flow: column;
+			align-content: stretch;
+			.fontStyle();}
+	}
+}
+
+
+ /* contact and table */
 .contact{ 
 	display: flex;
 	justify-content: flex-end;
@@ -81,9 +159,24 @@ html, body {
  .contact table{
 	.tableDesign();
 	tr{
+		.fontStyle();
 		height: 2em;
 		th, td{
 			padding: 1em;
 		}
 	}
+ }
+
+
+ /*  footer  */
+ footer {
+	height: 15%; 
+	background-color: darkgrey;
+	h4{
+	 display: flex;
+	 padding: 10px;
+	 justify-content: center;
+	 align-content: flex-end;
+	 font-size: 20px;
+	 }
  }
