@@ -134,3 +134,9 @@ html,
 body {
   height: 100%;
 }
+/*  TOP  */
+/* BANNER */
+header .introBanner img {
+  height: 20em;
+  width: auto;
+}
