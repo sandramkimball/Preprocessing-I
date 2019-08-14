@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1.2;
+	line-height: 1.5;
 }
 ol, ul {
 	list-style: none;
@@ -79,6 +79,9 @@ html, body {
 	font-family: 'Montserrat', sans-serif;
 }
 
+@font1: 'Montserrat', sans-serif;
+@font2: 'Roboto Slab', serif;
+
 /*  TOP  */
 
 /*  navbar */
@@ -104,8 +107,8 @@ header .introBanner{
 	box-shadow: 2px 4px 8px 0 grey; 
 	.bannerTitles{
 		margin-left: 5em;
-		h1{font-size: 2.5rem;}
-		h2{font-size: 2rem;}
+		h1{font-size: 3.5rem; font-family: @font1;}
+		h2{font-size: 3rem; font-family: @font1}
 	}
 }
 
@@ -117,8 +120,14 @@ header .introBanner{
  
 
 /*  overview under the banner  */
+
+.rightSide .introBanner, {
+	display: flex;
+}
 .overview{
 	display: flex;
+	flex-flow: column;
+	width: 50%;
 	justify-content: space-between;
 	margin-bottom: 10px;
 }
@@ -129,32 +138,9 @@ header .introBanner{
 	p{.fontStyle();}
 }
 
-
-/*  body content info boxes  */
-.stats{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: stretch;
-	div{
-		width: 40%;
-		margin: 4% 0;
-		h2{
-			border-bottom: 1px solid black;
-			.h2Style();}
-		ul{
-			display: flex;
-			flex-flow: column;
-			align-content: stretch;
-			.fontStyle();}
-	}
-}
-
-
- /* contact and table */
+/* contact and table */
 .contact{ 
 	display: flex;
-	justify-content: flex-end;
 }
  .contact table{
 	.tableDesign();
@@ -168,6 +154,28 @@ header .introBanner{
  }
 
 
+/*  body content info boxes  */
+.stats{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+	div{
+		width: 20%;
+		margin: 2% 0;
+		h2{
+			border-bottom: 1px solid black;
+			.h2Style();}
+		ul{
+			display: flex;
+			flex-flow: column;
+			align-content: stretch;
+			.fontStyle();}
+	}
+}
+
+
  /*  footer  */
  footer {
 	height: 15%; 
@@ -177,6 +185,6 @@ header .introBanner{
 	 padding: 10px;
 	 justify-content: center;
 	 align-content: flex-end;
-	 font-size: 20px;
-	 }
+	 font-size: 1.25rem;
+	 font-family: @font2;	 }
  }

@@ -105,7 +105,7 @@ section {
   display: block;
 }
 body {
-  line-height: 1.2;
+  line-height: 1.5;
 }
 ol,
 ul {
@@ -162,10 +162,12 @@ header .introBanner .bannerTitles {
   margin-left: 5em;
 }
 header .introBanner .bannerTitles h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  font-family: 'Montserrat', sans-serif;
 }
 header .introBanner .bannerTitles h2 {
-  font-size: 2rem;
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
 }
 header .introBanner img {
   height: 20em;
@@ -173,8 +175,13 @@ header .introBanner img {
   padding: 1em;
 }
 /*  overview under the banner  */
+.rightSide .introBanner {
+  display: flex;
+}
 .overview {
   display: flex;
+  flex-flow: column;
+  width: 50%;
   justify-content: space-between;
   margin-bottom: 10px;
 }
@@ -192,36 +199,9 @@ header .introBanner img {
   padding: 5px;
   font-family: 'Montserrat', sans-serif;
 }
-/*  body content info boxes  */
-.stats {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-}
-.stats div {
-  width: 40%;
-  margin: 4% 0;
-}
-.stats div h2 {
-  border-bottom: 1px solid black;
-  font-size: 25px;
-  padding: 5px;
-  font-weight: bold;
-  font-family: 'Roboto Slab', serif;
-}
-.stats div ul {
-  display: flex;
-  flex-flow: column;
-  align-content: stretch;
-  font-size: 20px;
-  padding: 5px;
-  font-family: 'Montserrat', sans-serif;
-}
 /* contact and table */
 .contact {
   display: flex;
-  justify-content: flex-end;
 }
 .contact table {
   width: 20%;
@@ -239,6 +219,33 @@ header .introBanner img {
 .contact table tr td {
   padding: 1em;
 }
+/*  body content info boxes  */
+.stats {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.stats div {
+  width: 20%;
+  margin: 2% 0;
+}
+.stats div h2 {
+  border-bottom: 1px solid black;
+  font-size: 25px;
+  padding: 5px;
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+}
+.stats div ul {
+  display: flex;
+  flex-flow: column;
+  align-content: stretch;
+  font-size: 20px;
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
 /*  footer  */
 footer {
   height: 15%;
@@ -249,5 +256,6 @@ footer h4 {
   padding: 10px;
   justify-content: center;
   align-content: flex-end;
-  font-size: 20px;
+  font-size: 1.25rem;
+  font-family: 'Roboto Slab', serif;
 }
