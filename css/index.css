@@ -133,10 +133,29 @@ table {
 html,
 body {
   height: 100%;
+  margin: 0 10%;
 }
 /*  TOP  */
 /* BANNER */
 header .introBanner img {
   height: 20em;
   width: auto;
+}
+/* TABLE */
+.contact {
+  display: flex;
+  justify-content: flex-end;
+}
+.contact table {
+  width: 20%;
+  background-color: #fff;
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+.contact table tr {
+  height: 2em;
+}
+.contact table tr th,
+.contact table tr td {
+  padding: 1em;
 }

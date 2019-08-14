@@ -55,11 +55,35 @@ table {
 
 html, body {
 	height: 100%;
+	margin: 0 10%;
 }
+
+.tableDesign(){
+	width: 20%;
+	background-color: #fff;
+	border: 1px solid gray;
+	border-collapse: collapse;
+};
 
 /*  TOP  */
  /* BANNER */
  header .introBanner img{
 	 height: 20em;
 	 width: auto;
+ }
+
+
+ /* TABLE */
+.contact{ 
+	display: flex;
+	justify-content: flex-end;
+}
+ .contact table{
+	.tableDesign();
+	tr{
+		height: 2em;
+		th, td{
+			padding: 1em;
+		}
+	}
  }
