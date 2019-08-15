@@ -145,6 +145,7 @@ header .navigation {
   word-spacing: 1em;
 }
 header .navigation a {
+  text-decoration: none;
   font-size: 20px;
   padding: 5px;
   font-family: 'Montserrat', sans-serif;
@@ -273,7 +274,7 @@ footer h4 {
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
+    justify-items: center;
     margin: 0;
   }
   .introBanner {
