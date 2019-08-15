@@ -1,1 +1,308 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.5;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0 10%;
+}
+/*  mix-ins  */
+/*  TOP  */
+/*  navbar */
+header .navigation {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2em;
+  word-spacing: 1em;
+}
+header .navigation a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+/*  banner  */
+header .introBanner {
+  height: 45%;
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 4px 8px 0 grey;
+}
+header .introBanner .bannerTitles {
+  margin-left: 5em;
+}
+header .introBanner .bannerTitles h1 {
+  font-size: 3.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+header .introBanner .bannerTitles h2 {
+  font-size: 2.75rem;
+  font-family: 'Montserrat', sans-serif;
+}
+header .introBanner img {
+  height: 25em;
+  width: auto;
+  padding: 1em;
+}
+/*  overview under the banner  */
+.rightSide {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+.overview {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+.overview div.me {
+  width: 100%;
+}
+.overview div.me h2 {
+  font-size: 25px;
+  padding: 5px;
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+}
+.overview div.me p {
+  font-size: 20px;
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+/* contact and table */
+.contact {
+  display: flex;
+  justify-content: center;
+}
+.contact table {
+  width: 20%;
+  background-color: #fff;
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+.contact table tr {
+  font-size: 20px;
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif;
+  height: 2em;
+}
+.contact table tr th,
+.contact table tr td {
+  padding: 1em;
+}
+/*  body content info boxes  */
+.stats {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 35%;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 1em 0;
+}
+.stats div {
+  width: 100%;
+  margin: 2% 0;
+}
+.stats div h2 {
+  border-bottom: 1px solid black;
+  font-size: 25px;
+  padding: 5px;
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+}
+.stats div ul {
+  display: flex;
+  flex-flow: column;
+  align-content: stretch;
+  font-size: 20px;
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+.wholeThang {
+  display: flex;
+  justify-content: space-between;
+}
+/*  footer  */
+footer {
+  height: 5%;
+  margin-top: 2em;
+  background-color: darkgrey;
+}
+footer h4 {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  font-size: 1.25rem;
+  font-family: 'Roboto Slab', serif;
+}
+@media screen and (max-width: 850px) {
+  html,
+  body {
+    width: 97%;
+    margin: 1em;
+  }
+  .navigation nav a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+    margin: 0;
+  }
+  .introBanner {
+    flex-direction: column;
+  }
+  header .introBanner .bannerTitles {
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+  }
+  .wholeThang {
+    flex-direction: column;
+    width: 100%;
+  }
+  .stats {
+    flex-direction: row;
+    width: 100%;
+  }
+  .rightSide {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  .rightSide .overview div.me,
+  .contact {
+    width: 100%;
+    padding: 1em;
+    justify-content: center;
+  }
+}
